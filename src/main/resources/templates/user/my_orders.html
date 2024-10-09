@@ -9,7 +9,7 @@
 	<section>
 		<div class="container mt-5 p-5">
 			<div class="row">
-				<p class="text-center fs-3">My Orders</p>
+				<p class="text-center fs-3">Mis Ordenes</p>
 				<th:block th:if="${session.succMsg}">
 					<p class="text-success fw-bold text-center">[[${session.succMsg}]]</p>
 					<th:block th:text="${@commnServiceImpl.removeSessionMessage()}"></th:block>
@@ -24,12 +24,12 @@
 					<table class="table table-bordered card-sh">
 						<thead >
 							<tr >
-								<th scope="col">Order Id</th>
-								<th scope="col">Date</th>
-								<th scope="col">Product Details</th>
-								<th scope="col">Price</th>
-								<th scope="col">Status</th>
-								<th scope="col">Action</th>
+								<th scope="col">Orden Id</th>
+								<th scope="col">Fecha</th>
+								<th scope="col">Detalles del Producto</th>
+								<th scope="col">Precio</th>
+								<th scope="col">Estado</th>
+								<th scope="col">Acciòn</th>
 							</tr>
 						</thead>
 						<tbody>
